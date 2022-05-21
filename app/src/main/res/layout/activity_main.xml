@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundimageview"
+        tools:context=".MainActivity">
+
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.ChasingDots"
+            android:layout_width="115dp"
+            android:layout_height="113dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="92dp"
+            android:layout_marginBottom="196dp"
+            android:padding="10dp"
+            app:SpinKit_Color="#F1A100"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/meme"
+            app:layout_constraintHorizontal_bias="0.989"
+            app:layout_constraintStart_toStartOf="@+id/meme"
+            app:layout_constraintTop_toBottomOf="@+id/meme"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/meme"
+            android:layout_width="301dp"
+            android:layout_height="307dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="71dp"
+            android:layout_marginEnd="55dp"
+            android:background="@drawable/buttonbackground"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:background="@drawable/buttonbg"
+
+            android:drawableLeft="@drawable/ic_baseline_share_24"
+            android:text="share"
+            android:textColor="#5C4800"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button2"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="128dp"
+            android:background="@drawable/buttonbg"
+            android:drawableRight="@drawable/ic_baseline_navigate_next_24"
+            android:text="next"
+
+            android:textColor="#5C4800"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
